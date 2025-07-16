@@ -96,20 +96,18 @@ const Calc = () => {
                     </div>
                 </div>
             </div>
-            <div className="container mt-5">
+            <div className="container mt-5 mb-5">
                 <div className="row justify-content-center">
                     <div className="col-md-9">
                         <div className="card rounded-4 border-0" style={{ backgroundColor: '#dffcfcff' }}>
-                            <div className="card-body px-4">
+                            <div className="card-body px-5">
                                 <h3 className="card-title text-center mb-4 text-info">Internal Marks Summary</h3>
                                 
                                 <div className="row mb-3">
-                                    <div className="col-md-6">
+                                    <div className="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                                         <p><strong>Name:</strong> {output.name}</p>
                                         <p><strong>Admission No:</strong> {output.admno}</p>
                                         <p><strong>Subject:</strong> {output.subject}</p>
-                                    </div>
-                                    <div className="col-md-6">
                                         <p><strong>Attendance Mark:</strong> {output.attendance}</p>
                                         <p><strong>Assignment Mark:</strong> {output.assignment}</p>
                                         <p className="text-danger fw-bold fs-5"><strong>Internal Mark:</strong> {output.internal}</p>
