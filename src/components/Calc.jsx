@@ -31,7 +31,7 @@ const Calc = () => {
     }
     const readInput = () => {
         console.log(input)
-        axios.post('http://localhost:4004/calculate', input).then(
+        axios.post('http://localhost:4005/calculate', input).then(
             (response) => {
                 changeOutput(response.data)
             }
@@ -54,7 +54,7 @@ const Calc = () => {
                                 <input type="text" className="form-control" name="admno" value={input.admno} onChange={inputHandler} />
                             </div>
                             <div className="col col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
-                                <label htmlFor="" className="form-label">Subject</label>
+                                <label htmlFor="" className="form-label">Course</label>
                                 <input type="text" className="form-control" name="subject" value={input.subject} onChange={inputHandler} />
                             </div>
                             <div className="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
